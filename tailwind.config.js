@@ -1,8 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        burtons: "burtons",
+        rock: "'Rock 3D', cursive",
+        handwriting: " 'Annie Use Your Telescope', cursive",
+      },
+    },
   },
   plugins: [],
 };
