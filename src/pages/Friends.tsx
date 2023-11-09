@@ -1,7 +1,7 @@
 import List from "../components/List";
-import Navbar from "../components/Navbar";
+import Title from "../components/Title";
 
-function Venner() {
+function Friends() {
   const vennData = [
     {
       url: "https://helloklara.com/",
@@ -13,7 +13,7 @@ function Venner() {
 
   return (
     <div className="bg-pink-200">
-      <Navbar />
+      <Title />
       <div>
         <h1 className="text-2xl text-center pt-10 pb-16 font-mono">
           {" "}
@@ -26,4 +26,4 @@ function Venner() {
   );
 }
 
-export default Venner;
+export default Friends;

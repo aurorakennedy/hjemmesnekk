@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Title from "../components/Title";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -10,14 +10,14 @@ const Home = () => {
   const gotToKnitting = () => {
     navigate("/kniting");
   };
-  const gotToVenner = () => {
-    navigate("/venner");
+  const gotToFriends = () => {
+    navigate("/friends");
   };
 
   return (
     <>
       <body className="overflow-y: scroll bg-lime-500 ">
-        <Navbar />
+        <Title />
         <main className="bg-lime-500  ">
           <div className="relative  h-screen w-screen   ">
             {/* Bakgrunn */}
@@ -134,11 +134,11 @@ const Home = () => {
             </div>
             <div className="absolute bottom-72 right-80">
               <button
-                onClick={gotToVenner}
+                onClick={gotToFriends}
                 className="text-pink-500 font-bold font-handwriting text-3xl hover:text-5xl"
               >
                 {" "}
-                Venner{" "}
+                Friends{" "}
               </button>
             </div>
 
