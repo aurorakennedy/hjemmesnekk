@@ -11,6 +11,12 @@ const Navbar = () => {
       </div>
       <div>
         <a
+          href="/about"
+          className="text-lg no-underline text-grey-darkest hover:text-pink-600 ml-10"
+        >
+          About
+        </a>
+        <a
           href="/Kniting"
           className="text-lg no-underline text-grey-darkest hover:text-pink-600 ml-10"
         >
@@ -21,12 +27,6 @@ const Navbar = () => {
           className="text-lg no-underline text-grey-darkest hover:text-pink-600 ml-10"
         >
           Friends{" "}
-        </a>
-        <a
-          href="#"
-          className="text-lg no-underline text-grey-darkest hover:text-pink-600 ml-10"
-        >
-          Three
         </a>
       </div>
     </nav>
