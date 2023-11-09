@@ -16,9 +16,9 @@ const Home = () => {
 
   return (
     <>
-      <body className="overflow-y: scroll bg-lime-500 ">
+      <body className="overflow-y: scroll bg-lime-400 ">
         <Title />
-        <main className="bg-lime-500  ">
+        <main className="bg-lime-400  ">
           <div className="relative  h-screen w-screen   ">
             {/* Bakgrunn */}
             <div className="hidden sm:block absolute left-5 top-20 w-48 h-auto ">
@@ -117,7 +117,7 @@ const Home = () => {
             <div className="absolute top-1/2 left-80">
               <button
                 onClick={gotToAbout}
-                className="text-purple-700 font-bold font-handwriting text-3xl hover:text-5xl"
+                className="text-purple-700 font-bold font-playpen text-2xl hover:text-pink-600"
               >
                 {" "}
                 Om meg{" "}
@@ -126,7 +126,7 @@ const Home = () => {
             <div className="absolute top-48 right-72">
               <button
                 onClick={gotToKnitting}
-                className="text-blue-800 font-bold font-handwriting text-3xl hover:text-5xl"
+                className="text-blue-800 font-bold font-playpen text-2xl hover:text-pink-600"
               >
                 {" "}
                 Strikking{" "}
@@ -135,7 +135,7 @@ const Home = () => {
             <div className="absolute bottom-72 right-80">
               <button
                 onClick={gotToFriends}
-                className="text-pink-500 font-bold font-handwriting text-3xl hover:text-5xl"
+                className="text-pink-500 font-bold font-playpen text-2xl hover:text-pink-600"
               >
                 {" "}
                 Friends{" "}

@@ -7,7 +7,6 @@ module.exports = {
         burtons: "burtons",
         rock: "'Rock 3D', cursive",
         playpen: "'Playpen Sans', cursive;",
-        handwriting: " 'Annie Use Your Telescope', cursive",
       },
     },
   },
