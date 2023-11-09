@@ -8,7 +8,7 @@ const Kniting = () => {
         <main className="bg-blue-200">
           <Navbar />
 
-          <div className="text-center pt-6">
+          <div className="text-center pt-10">
             <h1 className=" text-2xl font-semibold text-gray-800 font-playpen">
               Some of my knitting:
             </h1>

@@ -1,5 +1,5 @@
 import List from "../components/List";
-import Title from "../components/Title";
+import Navbar from "../components/Navbar";
 
 function Friends() {
   const vennData = [
@@ -13,14 +13,24 @@ function Friends() {
 
   return (
     <div className="bg-pink-200">
-      <Title />
+      <Navbar />
       <div>
-        <h1 className="text-2xl text-center pt-10 pb-16 font-mono">
+        <h1 className="text-2xl font-semibold text-center pt-10 pb-16 font-playpen">
           {" "}
-          Sjekk ut nettsidene til vennene mine!
+          Have a look at my friends webpages:
         </h1>
-
         <List items={vennData} />
+        <br /> <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     </div>
   );

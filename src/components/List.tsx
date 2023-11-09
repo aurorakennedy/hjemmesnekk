@@ -17,7 +17,7 @@ function List({ items }: ListProps) {
             <a className="font-mono hover:text-pink-600 mb-10" href={venn.url}>
               {venn.navn}
               <img
-                className="h-64 rounded-lg transition-transform transform hover:scale-105"
+                className="h-64 rounded-lg transition-transform transform "
                 src={venn.bilde}
                 alt={`Bilde av ${venn.navn}`}
               />

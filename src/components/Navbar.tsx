@@ -4,7 +4,7 @@ const Navbar = () => {
       <div className="mb-2 sm:mb-0">
         <a
           href="/"
-          className=" font-rock font-extrabold text-pink-600 text-4xl no-underline hover:text-pink-700"
+          className=" font-rock font-extrabold text-pink-600 text-5xl no-underline hover:text-pink-700"
         >
           Aurora Kennedy{" "}
         </a>
