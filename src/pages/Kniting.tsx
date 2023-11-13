@@ -1,70 +1,29 @@
+import List from "../components/List";
 import Navbar from "../components/Navbar";
 
 const Kniting = () => {
+  const knittingData = [
+    { navn: "Føyka", bilde: "/images/strikk/føyka.jpeg" },
+    { navn: "Zip", bilde: "/images/strikk/zipJakke.jpeg" },
+    { navn: "Vest", bilde: "/images/strikk/fargerikVest.jpeg" },
+    { navn: "Grønn", bilde: "/images/strikk/grønnJakke.jpeg" },
+    { navn: "Ulv", bilde: "/images/strikk/ulven.jpeg" },
+    { navn: "Sokker", bilde: "/images/strikk/sokker.jpeg" },
+  ];
+
   return (
-    <>
-      <body>
-        {/* Bakgrunn */}
-        <main className="bg-blue-200">
-          <Navbar />
-
-          <div className="text-center pt-10">
-            <h1 className=" text-2xl font-semibold text-gray-800 font-playpen">
-              Some of my knitting:
-            </h1>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-24 py-10 font-mono">
-            <div className=" text-center">
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="/images/strikk/zipJakke.jpeg"
-                alt=""
-              ></img>
-            </div>
-            <div className=" text-center">
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="/images/strikk/fargerikVest.jpeg"
-                alt=""
-              ></img>
-            </div>
-            <div className=" text-center">
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="/images/strikk/grønnJakke.jpeg"
-                alt=""
-              ></img>
-              <span className=" text-gray-800"></span>
-            </div>
-            <div className=" text-center">
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="/images/strikk/ulven.jpeg"
-                alt=""
-              ></img>
-              <span className=" text-gray-800"></span>
-            </div>
-            <div className=" text-center">
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="/images/strikk/føyka.jpeg"
-                alt=""
-              ></img>
-              <span className=" text-gray-800"></span>
-            </div>
-
-            <div className=" text-center">
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="/images/strikk/ulven.jpeg"
-                alt=""
-              ></img>
-            </div>
-          </div>
-        </main>
-      </body>
-    </>
+    <div className=" min-h-screen bg-blue-200">
+      <Navbar />
+      <div>
+        <h1 className="text-2xl font-semibold text-center text-gray-800 pt-10 font-playpen">
+          {" "}
+          Some of my knitting:
+        </h1>
+        <List items={knittingData} />
+        <br /> <br />
+        <br />
+      </div>
+    </div>
   );
 };
 
