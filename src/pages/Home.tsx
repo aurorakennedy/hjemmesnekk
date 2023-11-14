@@ -20,7 +20,6 @@ const Home = () => {
       <Title />
 
       <div className="relative  h-screen w-screen   ">
-        {/* Bakgrunn */}
         <Background />
         {/* Linker */}
         <div className="absolute top-1/2 left-80">
@@ -29,7 +28,7 @@ const Home = () => {
             className="text-purple-700 font-bold font-quicksand text-2xl hover:text-pink-600"
           >
             {" "}
-            Om meg{" "}
+            About{" "}
           </button>
         </div>
         <div className="absolute top-48 right-72">
@@ -38,7 +37,7 @@ const Home = () => {
             className="text-blue-800 font-bold font-quicksand text-2xl hover:text-pink-600"
           >
             {" "}
-            Strikking{" "}
+            Knitting{" "}
           </button>
         </div>
         <div className="absolute bottom-72 right-80">
@@ -53,13 +52,7 @@ const Home = () => {
 
         {/* Ikke Bakgrunn */}
         {/* Kan sikkert gjøres på en letter måte, men dette er det som gjør at teksten er midt på: top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 */}
-        <div className="absolute z-10 text-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 py-2 px-4  ">
-          {/*<h1 className="font-rock font-bold text-7xl text-pink-600">
-                Aurora Kennedy
-  </h1>*/}
-          <br />
-          <br />
-
+        <div className="absolute top-96 left-1/2  -translate-x-1/2 -translate-y-1/2 ">
           <img
             className="inline object-scale-down h-50 w-72 rounded-3xl"
             src="/images/vintage.jpeg"

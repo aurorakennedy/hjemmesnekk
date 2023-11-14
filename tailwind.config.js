@@ -6,7 +6,6 @@ module.exports = {
       fontFamily: {
         burtons: "burtons",
         rock: "'Rock 3D', cursive",
-        playpen: "'Playpen Sans', cursive;",
         quicksand: "'Quicksand', sans-serif;",
       },
     },

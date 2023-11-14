@@ -17,11 +17,9 @@ function Friends() {
       <div>
         <h1 className="text-2xl font-semibold text-center pt-10 font-quicksand">
           {" "}
-          Have a look at my friends webpages:
+          Checkout my friends webpages:
         </h1>
         <List items={vennData} />
-        <br /> <br />
-        <br />
       </div>
     </div>
   );
