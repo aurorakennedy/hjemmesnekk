@@ -15,7 +15,7 @@ function Friends() {
     <div className=" min-h-screen bg-pink-200">
       <Navbar />
       <div>
-        <h1 className="text-2xl font-semibold text-center pt-10 font-quicksand">
+        <h1 className="text-2xl text-center pt-10 font-quicksand">
           {" "}
           Checkout my friends webpages:
         </h1>

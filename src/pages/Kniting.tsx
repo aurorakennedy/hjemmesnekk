@@ -13,10 +13,10 @@ const Kniting = () => {
   ];
 
   return (
-    <div className=" min-h-screen bg-blue-200">
+    <div className=" min-h-screen bg-orange-200">
       <Navbar />
       <div>
-        <h1 className="text-2xl font-semibold text-center text-gray-800 pt-10 font-quicksand">
+        <h1 className="text-2xl text-center text-gray-800 pt-10 font-quicksand">
           {" "}
           Some of my knitting:
         </h1>

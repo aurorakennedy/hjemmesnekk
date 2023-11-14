@@ -5,7 +5,7 @@ const About = () => {
     <div className="min-h-screen  bg-purple-200">
       <Navbar />
       <div className="text-center pt-10">
-        <h1 className="text-2xl font-quicksand font-semibold">About:</h1>
+        <h1 className="text-2xl font-quicksand ">About:</h1>
         <br />
         <p className=" px-56">
           Hi, I'm Aurora, an informatics student. I created this webpage to
