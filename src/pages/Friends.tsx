@@ -6,9 +6,9 @@ function Friends() {
     {
       url: "https://helloklara.com/",
       navn: "Klara",
-      bilde: "/images/Klara.jpeg",
+      bilde: "/images/venner/Klara.jpeg",
     },
-    { url: "https://isak.me/", navn: "Isak", bilde: "/images/Isak.jpg" },
+    { url: "https://isak.me/", navn: "Isak", bilde: "/images/venner/Isak.jpg" },
   ];
 
   return (

@@ -9,6 +9,7 @@ const Kniting = () => {
     { navn: "Grønn", bilde: "/images/strikk/grønnJakke.jpeg" },
     { navn: "Ulv", bilde: "/images/strikk/ulven.jpeg" },
     { navn: "Sokker", bilde: "/images/strikk/sokker.jpeg" },
+    { navn: "Lue", bilde: "/images/strikk/lue.jpeg" },
   ];
 
   return (
