@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav className="flex flex-col font-playpen text-center sm:flex-row sm:text-left sm:justify-between py-4 px-10  sm:items-baseline w-full">
+    <nav className="flex flex-col font-quicksand text-center sm:flex-row sm:text-left sm:justify-between py-4 px-10  sm:items-baseline w-full">
       <div className="mb-2 sm:mb-0">
         <a
           href="/"
@@ -30,24 +30,6 @@ const Navbar = () => {
         </a>
       </div>
     </nav>
-    // <nav className="flex flex-col text-center w-full pt-8 ">
-    //   <div className="">
-    //     <a
-    //       className=" pl-10 font-rock font-extrabold text-4xl text-pink-600 "
-    //       href="/"
-    //     >
-    //       Aurora Kennedy{" "}
-    //     </a>
-    //   </div>
-    //   <div className="font-playpen text-xl text-gray-700 ">
-    //     <a className="hover:text-pink-600" href="/Kniting">
-    //       Knitting{" "}
-    //     </a>
-    //     <a className="hover:text-pink-600" href="/Friends">
-    //       Friends{" "}
-    //     </a>
-    //   </div>
-    // </nav>
   );
 };
 

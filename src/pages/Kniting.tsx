@@ -16,7 +16,7 @@ const Kniting = () => {
     <div className=" min-h-screen bg-blue-200">
       <Navbar />
       <div>
-        <h1 className="text-2xl font-semibold text-center text-gray-800 pt-10 font-playpen">
+        <h1 className="text-2xl font-semibold text-center text-gray-800 pt-10 font-quicksand">
           {" "}
           Some of my knitting:
         </h1>

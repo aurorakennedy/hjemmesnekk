@@ -26,7 +26,7 @@ const Home = () => {
         <div className="absolute top-1/2 left-80">
           <button
             onClick={gotToAbout}
-            className="text-purple-700 font-bold font-playpen text-2xl hover:text-pink-600"
+            className="text-purple-700 font-bold font-quicksand text-2xl hover:text-pink-600"
           >
             {" "}
             Om meg{" "}
@@ -35,7 +35,7 @@ const Home = () => {
         <div className="absolute top-48 right-72">
           <button
             onClick={gotToKnitting}
-            className="text-blue-800 font-bold font-playpen text-2xl hover:text-pink-600"
+            className="text-blue-800 font-bold font-quicksand text-2xl hover:text-pink-600"
           >
             {" "}
             Strikking{" "}
@@ -44,7 +44,7 @@ const Home = () => {
         <div className="absolute bottom-72 right-80">
           <button
             onClick={gotToFriends}
-            className="text-pink-500 font-bold font-playpen text-2xl hover:text-pink-600"
+            className="text-pink-500 font-bold font-quicksand text-2xl hover:text-pink-600"
           >
             {" "}
             Friends{" "}
