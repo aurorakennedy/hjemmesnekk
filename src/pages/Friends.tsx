@@ -12,16 +12,16 @@ function Friends() {
   ];
 
   return (
-    <div className=" min-h-screen bg-pink-200">
+    <body className="min-h-screen bg-pink-200 font-quicksand">
       <Navbar />
-      <div>
-        <h1 className="text-2xl text-center pt-10 font-quicksand">
-          {" "}
-          Checkout my friends webpages:
-        </h1>
+      <h1 className="text-2xl text-center pt-10 ">
+        {" "}
+        Checkout my friends webpages:
+      </h1>
+      <div className="mt-10">
         <List items={vennData} />
       </div>
-    </div>
+    </body>
   );
 }
 

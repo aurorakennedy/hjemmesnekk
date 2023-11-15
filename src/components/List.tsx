@@ -10,17 +10,14 @@ interface ListProps {
 
 function List({ items }: ListProps) {
   return (
-    <div className="px-32 pt-20 text-center">
-      <ul className="flex flex-wrap justify-center gap-8">
+    <div className="font-quicksand text-center">
+      <ul className="flex flex-row flex-wrap justify-center gap-8">
         {items.map((item, index) => (
-          <li key={index} className="mb-10">
-            <a
-              className=" font-quicksand hover:text-pink-600 mb-10"
-              href={item.url}
-            >
+          <li key={index}>
+            <a className="hover:text-pink-600 " href={item.url}>
               {item.navn}
               <img
-                className="h-96 w-72 rounded-lg transition-transform transform "
+                className="h-96 w-72 rounded-lg object-cover"
                 src={item.bilde}
                 alt={`Bilde av ${item.navn}`}
               />
