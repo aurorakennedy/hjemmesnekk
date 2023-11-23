@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Title from "../components/Title";
 import Background from "../components/Flowerpower";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -16,16 +17,22 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen  bg-blue-200 ">
-      <Title />
+    <div className="min-h-screen bg-blue-200 ">
+      <div className="hidden xl:block">
+        <Title />
+      </div>
+      <div className=" xl:hidden ">
+        <Navbar />
+      </div>
 
       <div className="relative  h-screen w-screen   ">
         <Background />
+
         {/* Linker */}
         <div className="absolute top-1/2 left-80">
           <button
             onClick={gotToAbout}
-            className="text-purple-700 font-bold font-quicksand text-2xl hover:text-pink-600"
+            className="hidden xl:block text-purple-700 font-bold font-quicksand text-2xl hover:text-pink-600"
           >
             {" "}
             About{" "}
@@ -34,7 +41,7 @@ const Home = () => {
         <div className="absolute top-48 right-72">
           <button
             onClick={gotToKnitting}
-            className="text-blue-800 font-bold font-quicksand text-2xl hover:text-pink-600"
+            className="hidden xl:block text-blue-800 font-bold font-quicksand text-2xl hover:text-pink-600"
           >
             {" "}
             Knitting{" "}
@@ -43,7 +50,7 @@ const Home = () => {
         <div className="absolute bottom-72 right-80">
           <button
             onClick={gotToFriends}
-            className="text-pink-500 font-bold font-quicksand text-2xl hover:text-pink-600"
+            className="hidden xl:block text-pink-500 font-bold font-quicksand text-2xl hover:text-pink-600"
           >
             {" "}
             Friends{" "}
