@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav className="flex flex-col gap-8 font-quicksand text-center lg:flex-row sm:justify-between py-4 px-10  lg:items-baseline w-full">
+    <nav className="flex flex-col gap-8 font-quicksand text-center lg:flex-row sm:justify-between py-4 lg:px-10  lg:items-baseline w-full">
       <div className="mb-2 sm:mb-0">
         <a
           href="/"
