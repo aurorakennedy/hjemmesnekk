@@ -3,13 +3,13 @@ import Navbar from "../components/Navbar";
 
 const Kniting = () => {
   const knittingData = [
-    { navn: "Føyka", bilde: "/images/strikk/føyka.jpeg" },
-    { navn: "Zip", bilde: "/images/strikk/zipJakke.jpeg" },
+    { navn: "Føyka genser", bilde: "/images/strikk/føyka.jpeg" },
+    { navn: "Zip jakke", bilde: "/images/strikk/zipJakke.jpeg" },
     { navn: "Vest", bilde: "/images/strikk/fargerikVest.jpeg" },
-    { navn: "Grønn", bilde: "/images/strikk/grønnJakke.jpeg" },
-    { navn: "Ulv", bilde: "/images/strikk/ulven.jpeg" },
+    { navn: "Othelie jakke", bilde: "/images/strikk/grønnJakke.jpeg" },
+    { navn: "Svartulv genser", bilde: "/images/strikk/ulven.jpeg" },
     { navn: "Sokker", bilde: "/images/strikk/sokker.jpeg" },
-    { navn: "Lue", bilde: "/images/strikk/lue.jpeg" },
+    { navn: "'Åsa' lue", bilde: "/images/strikk/lue.jpeg" },
   ];
 
   return (
