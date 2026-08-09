@@ -62,9 +62,18 @@ const Home = () => {
         <div className="absolute top-96 left-1/2  -translate-x-1/2 -translate-y-1/2 ">
           <img
             className="inline object-scale-down h-50 w-72 rounded-3xl"
-            src="/images/vintage.jpeg"
+            src="/images/strikk/beach.jpeg"
             alt="A beautiful landscape"
           ></img>
+          <br />
+          <p className=" px-56">
+            Hi, I’m Aurora! Welcome to my personal space. I’m an informatics
+            student at NTNU in Trondheim, currently pursuing my master’s in
+            Interaction Design, Gaming, and Learning Technology. I created this
+            webpage to practice what I’m learning and to have a space where I
+            can freely explore my creativity and share bits and pieces about
+            myself. I hope you enjoy exploring it! 💖
+          </p>
         </div>
       </div>
     </div>

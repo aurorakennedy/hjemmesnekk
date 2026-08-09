@@ -7,6 +7,8 @@ module.exports = {
         burtons: "burtons",
         rock: "'Rock 3D', cursive",
         quicksand: "'Quicksand', sans-serif;",
+        vs: "VT323",
+        typewriter: "'Special Elite', system-ui;",
       },
     },
   },
