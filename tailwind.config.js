@@ -5,10 +5,11 @@ module.exports = {
     extend: {
       fontFamily: {
         burtons: "burtons",
-        rock: "'Rock 3D', cursive",
+        rock: "'Rock 3D', regular",
         quicksand: "'Quicksand', sans-serif;",
         vs: "VT323",
         typewriter: "'Special Elite', system-ui;",
+        hand: "'Gochi Hand', cursive",
       },
     },
   },

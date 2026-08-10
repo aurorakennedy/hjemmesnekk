@@ -1,0 +1,142 @@
+.landing {
+  min-height: 100vh;
+  background: #ddd1e5;
+}
+
+/* The canvas everything is positioned inside. aspect-ratio keeps the
+   portrait proportions from the mockup at any width. */
+.collage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 730 / 1300;
+}
+
+/* --- Wonky orange grid / plaid band behind the middle --- */
+.grid-band {
+  position: absolute;
+  left: 0;
+  top: 17%;
+  width: 100%;
+  height: 50%;
+  object-fit: contain; /* fills the band, crops slightly instead of stretching */
+}
+
+/* --- Outlined hand-drawn titles --- */
+.title {
+  position: absolute;
+  z-index: 20;
+  margin: 0;
+  font-family: "Rock 3D", cursive;
+  /* fluid size: scales with viewport, clamped so it stays sane on phones / 4K */
+  font-size: clamp(2.5rem, 10vw, 8rem);
+  line-height: 1;
+  color: #8b162b;
+}
+
+.title--aurora {
+  left: 2%;
+  top: 2%;
+}
+
+.title--kennedy {
+  right: 1%;
+  top: 8%;
+}
+
+/* --- Hero cut-out photo --- */
+.fly {
+  position: absolute;
+  z-index: 0;
+  left: 18%;
+  top: 5%;
+  width: 30%;
+  object-fit: contain;
+}
+
+/* --- Right-aligned menu --- */
+.menu {
+  position: absolute;
+  z-index: 20;
+  right: 35%;
+  top: 19%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: clamp(0.8rem, 2vw, 1.4rem);
+  color: #0f1010;
+  transform: rotate(15deg);
+}
+
+/* staircase: each line indented a bit more than the one above */
+.menu li:nth-child(1) {
+  padding-left: 0;
+}
+.menu li:nth-child(2) {
+  padding-left: 1.5em;
+}
+.menu li:nth-child(3) {
+  padding-left: 3em;
+}
+.menu li:nth-child(4) {
+  padding-left: 4.5em;
+}
+
+.menu li + li {
+  margin-top: 0.25rem;
+}
+
+.menu button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.menu button:hover {
+  color: #8a1c2b;
+}
+
+.menu-disabled {
+  color: #64748b;
+}
+
+/* --- Intro text boxes (dark-red highlight behind each line) --- */
+.intro {
+  position: absolute;
+  left: 4%;
+  top: 35%;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(0.6rem, 2vw, 1.6rem);
+  font-weight: 500;
+  line-height: 1.5;
+  color: #f6f3cf;
+}
+
+.intro p {
+  margin: 0 0 0.5rem;
+}
+
+.intro span {
+  background: #8b162b;
+  padding: 0.25rem 0.5rem;
+  /* keep the highlight wrapping cleanly across line breaks */
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* --- Tilted wall portrait --- */
+.portrait {
+  position: absolute;
+  right: 6%;
+  top: 32%;
+  width: 28%;
+  height: 20%;
+  object-fit: cover;
+  border-radius: 50px;
+}
