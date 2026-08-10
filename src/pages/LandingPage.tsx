@@ -16,14 +16,11 @@ const LandingPage = () => {
       {/* Full-width collage — one layout for every screen size */}
       <div className="collage">
         {/* Orange grid band behind the middle */}
-        <div className="grid-band">
-          {/* Orange grid band behind the middle */}
-          <img
-            className="grid-band"
-            src="/images/landingPage/backgroundGrid.png"
-            alt=""
-          />
-        </div>
+        <img
+          className="grid-band"
+          src="/images/landingPage/backgroundGrid.png"
+          alt=""
+        />
 
         {/* Titles */}
         <h1 className="title title--aurora">Aurora</h1>
