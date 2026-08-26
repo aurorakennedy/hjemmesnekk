@@ -48,12 +48,12 @@ const About = () => {
           captions={["Jeg syns det er veldig gøy å buldre og klatre"]}
           photos={[
             {
-              src: "public/images/about/Albaracin.png",
+              src: "/images/about/Albaracin.png",
               alt: "Aurora buldrer ute i Albaracin, Spania",
               shape: "portrait",
             },
             {
-              src: "public/images/about/UteKlatring.png",
+              src: "/images/about/UteKlatring.png",
               alt: "Ute å klatrer i fjellet",
               shape: "portrait",
             },
@@ -64,12 +64,12 @@ const About = () => {
           captions={["Strikking er den hobbyen jeg har holdt på med lengst"]}
           photos={[
             {
-              src: "public/images/about/Strikke.jpeg",
+              src: "/images/about/Strikke.jpeg",
               alt: "Aurora og Tale strikker",
               shape: "square",
             },
             {
-              src: "public/images/about/StrikkBaby.jpeg",
+              src: "/images/about/StrikkBaby.jpeg",
               alt: "Baby strikke sett",
               shape: "portrait",
             },
@@ -84,7 +84,7 @@ const About = () => {
           ]}
           photos={[
             {
-              src: "public/images/about/AuroraKobe.png",
+              src: "/images/about/AuroraKobe.png",
               alt: "Aurora og hunden Kobe",
               shape: "portrait",
             },
@@ -96,12 +96,12 @@ const About = () => {
           captions={["Jeg er halvt irsk! Og elsker Irland<3"]}
           photos={[
             {
-              src: "public/images/about/ExIrland.png",
+              src: "/images/about/ExIrland.png",
               alt: "Venner på tur i Irland",
               shape: "portrait",
             },
             {
-              src: "public/images/about/Grannys.png",
+              src: "/images/about/Grannys.png",
               alt: "Rundt middagsbordet til Granny i Irland",
               shape: "portrait",
             },
@@ -113,17 +113,17 @@ const About = () => {
           captions={["Jeg elsker å være i naturen"]}
           photos={[
             {
-              src: "public/images/about/Sabo.png",
+              src: "/images/about/Sabo.png",
               alt: "Regnbue over fjellene i Sæbø",
               shape: "portrait",
             },
             {
-              src: "public/images/about/TeltTur.png",
+              src: "/images/about/TeltTur.png",
               alt: "Telttur i naturen",
               shape: "portrait",
             },
             {
-              src: "public/images/about/Topptur.png",
+              src: "/images/about/Topptur.png",
               alt: "Bilde på Rando tur",
               shape: "landscape",
             },
@@ -135,12 +135,12 @@ const About = () => {
           captions={["Reise og utforske verden", "Ikke like glad i å pakke"]}
           photos={[
             {
-              src: "public/images/about/Vietnam.png",
+              src: "/images/about/Vietnam.png",
               alt: "Bilde i spiel i Vietnam",
               shape: "portrait",
             },
             {
-              src: "public/images/about/Pakke.png",
+              src: "/images/about/Pakke.png",
               alt: "Pakke ting for reise",
               shape: "portrait",
             },
@@ -152,7 +152,7 @@ const About = () => {
           captions={["Sier aldri nei til en bra konsert!"]}
           photos={[
             {
-              src: "public/images/about/Radiohead.png",
+              src: "/images/about/Radiohead.png",
               alt: "Bilde fra konsert med Radiohead",
               shape: "portrait",
             },
