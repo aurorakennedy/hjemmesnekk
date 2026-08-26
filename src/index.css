@@ -15,3 +15,14 @@ code {
   font-family:
     source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+:root {
+  --color-crimsonInk: #8b162b;
+  --color-dustyRose: #f9b6b8;
+  --color-cosmicLatte: #f6f3cf;
+  --color-neonPear: #c6b63b;
+  --color-burntSienna: #f37521;
+  --color-articBlue: #bad2e8;
+  --color-lightPurple: #ddd1e5;
+  --color-black: #1a1a1a;
+}
