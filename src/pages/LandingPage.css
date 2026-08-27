@@ -1,33 +1,27 @@
 .landing {
-  /* min-height: 50vh; */
   background: #ddd1e5;
 }
 
-/* The canvas everything is positioned inside. aspect-ratio keeps the
-   portrait proportions from the mockup at any width. */
 .collage {
   position: relative;
   width: 100%;
   aspect-ratio: 730 / 1300;
 }
 
-/* --- Wonky orange grid / plaid band behind the middle --- */
 .grid-band {
   position: absolute;
   left: 0;
   top: 17%;
   width: 100%;
   height: 50%;
-  object-fit: contain; /* fills the band, crops slightly instead of stretching */
+  object-fit: contain;
 }
 
-/* --- Outlined hand-drawn titles --- */
 .title {
   position: absolute;
   z-index: 20;
   margin: 0;
   font-family: "Rock 3D", cursive;
-  /* fluid size: scales with viewport, clamped so it stays sane on phones / 4K */
   font-size: clamp(2.5rem, 10vw, 8rem);
   line-height: 1;
   color: #8b162b;
@@ -43,7 +37,6 @@
   top: 8%;
 }
 
-/* --- Hero cut-out photo --- */
 .fly {
   position: absolute;
   z-index: 0;
@@ -53,7 +46,6 @@
   object-fit: contain;
 }
 
-/* --- Right-aligned menu --- */
 .menu {
   position: absolute;
   z-index: 20;
@@ -70,7 +62,6 @@
   transform: rotate(15deg);
 }
 
-/* staircase: each line indented a bit more than the one above */
 .menu li:nth-child(1) {
   padding-left: 0;
 }
@@ -106,7 +97,6 @@
   color: #64748b;
 }
 
-/* --- Intro text boxes (dark-red highlight behind each line) --- */
 .intro {
   position: absolute;
   left: 4%;
@@ -125,12 +115,10 @@
 .intro span {
   background: #8b162b;
   padding: 0.25rem 0.5rem;
-  /* keep the highlight wrapping cleanly across line breaks */
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
 
-/* --- Tilted wall portrait --- */
 .portrait {
   position: absolute;
   right: 6%;
@@ -141,12 +129,10 @@
   border-radius: 50px;
 }
 @media (max-width: 700px) {
-  /* taller canvas so the pieces stack without overlapping */
   .collage {
     aspect-ratio: 1 / 3;
   }
 
-  /* menu: plain 2×2 grid, no tilt — phone only */
   .menu {
     left: 5%;
     right: 5%;
@@ -172,14 +158,12 @@
     padding: 0.3em 0;
   }
 
-  /* grid band behind the info text */
   .grid-band {
     top: 44%;
     height: 24%;
     object-fit: cover;
   }
 
-  /* info text wraps within the screen */
   .intro {
     top: 47%;
     left: 5%;
@@ -188,7 +172,6 @@
     line-height: 1.7;
   }
 
-  /* photo centered below the info text */
   .portrait {
     top: 72%;
     left: 50%;

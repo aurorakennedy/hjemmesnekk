@@ -1,5 +1,6 @@
 import "./About.css";
 import PhotoGroup from "../components/PhotoGroup";
+import Footer from "../components/Footer";
 
 const About = () => {
   return (
@@ -16,7 +17,7 @@ const About = () => {
         </div>
         <img
           className="about-portrait"
-          src="public/images/about/AuroraGondol.png"
+          src="/images/about/AuroraGondol.png"
           alt="Aurora ute i naturen"
         />
       </header>
@@ -159,6 +160,8 @@ const About = () => {
           ]}
         />
       </section>
+
+      <Footer />
     </div>
   );
 };
