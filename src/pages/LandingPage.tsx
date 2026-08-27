@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "./LandingPage.css";
+import Footer from "../components/Footer";
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -13,25 +14,22 @@ const LandingPage = () => {
 
   return (
     <div className="landing">
-      {/* Full-width collage — one layout for every screen size */}
       <div className="collage">
-        {/* Orange grid band behind the middle */}
         <img
           className="grid-band"
           src="/images/landingPage/backgroundGrid.png"
           alt=""
         />
 
-        {/* Titles */}
         <h1 className="title title--aurora">Aurora</h1>
         <h1 className="title title--kennedy">Kennedy</h1>
-        {/* Hero cut-out photo */}
+
         <img
           className="fly"
           src="/images/landingPage/auroraFly.png"
           alt="Aurora dancing on the rocks by the sea"
         />
-        {/* Menu, right-aligned under the title */}
+
         <ul className="menu">
           {menu.map((m) => (
             <li key={m.label}>
@@ -44,7 +42,6 @@ const LandingPage = () => {
           ))}
         </ul>
 
-        {/* Intro text boxes */}
         <div className="intro">
           <p>
             <span>Hei jeg heter Aurora.</span>
@@ -62,13 +59,13 @@ const LandingPage = () => {
           </p>
         </div>
 
-        {/* Wall portrait, tilted */}
         <img
           className="portrait"
           src="/images/landingPage/aurora.png"
           alt="Aurora outdoors"
         />
       </div>
+      <Footer />
     </div>
   );
 };
