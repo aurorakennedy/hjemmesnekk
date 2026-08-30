@@ -1,14 +1,13 @@
 import "./About.css";
 import PhotoGroup from "../components/PhotoGroup";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 const About = () => {
   return (
     <div className="about">
+      <Navbar />
       <header className="about-header">
-        <a className="about-home-link" href="/">
-          gå til hjem
-        </a>
         <h1 className="about-title">LITT OM MEG</h1>
         <div className="about-intro">
           <p>Hei på deg!</p>

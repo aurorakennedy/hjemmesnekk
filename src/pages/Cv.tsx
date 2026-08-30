@@ -1,5 +1,6 @@
 import "./Cv.css";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 type CvEntry = {
   title: string;
@@ -125,10 +126,8 @@ const CvSection = ({
 const Cv = () => {
   return (
     <div className="cv">
+      <Navbar />
       <header className="cv-header">
-        <a className="cv-home-link" href="/">
-          gå til hjem
-        </a>
         <h1 className="cv-title">CV</h1>
         <p className="cv-name">Aurora Kennedy, 15.06.2000</p>
         <p className="cv-intro">{intro}</p>

@@ -1,0 +1,35 @@
+.site-navbar {
+  padding: 1rem;
+}
+
+.site-navbar-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: clamp(0.8rem, 2vw, 1.1rem);
+}
+
+.site-navbar-menu button {
+  font: inherit;
+  color: var(--color-crimsonInk);
+  background: transparent;
+  border: 2px solid var(--color-crimsonInk);
+  border-radius: 4px;
+  padding: 0.4em 0.9em;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.site-navbar-menu button:hover,
+.site-navbar-menu button.active {
+  background: var(--color-crimsonInk);
+  color: var(--color-cosmicLatte);
+}
