@@ -11,19 +11,6 @@
   margin: 0 auto;
 }
 
-.about-home-link {
-  display: inline-block;
-  color: var(--color-cosmicLatte);
-  font-family: "Inter", sans-serif;
-  font-size: 0.9rem;
-  text-decoration: none;
-  margin-bottom: 1.5rem;
-}
-
-.about-home-link:hover {
-  text-decoration: underline;
-}
-
 .about-title {
   /* font-family: "Rock 3D", cursive; */
   font-size: clamp(2.5rem, 12vw, 7rem); /* min, preferred, max */
@@ -205,10 +192,5 @@
 
   .about-gallery {
     padding: 2rem 1.25rem 1rem;
-  }
-
-  .about-gallery-item {
-    width: 100%;
-    max-width: 20rem;
   }
 }

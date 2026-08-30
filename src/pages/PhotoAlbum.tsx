@@ -1,5 +1,6 @@
 import List from "../components/List";
 import Navbar from "../components/Navbar";
+import "./PhotoAlbum.css";
 
 function shuffleArray<T>(array: T[]): T[] {
   return [...array].sort(() => Math.random() - 0.5);
@@ -44,21 +45,14 @@ const PhotoAlbum = () => {
   const shuffledPhotos = shuffleArray(photoAlbumData);
 
   return (
-    <div className=" min-h-screen bg-orange-200">
+    <div className="photo-album">
       <Navbar />
-      <div>
-        <h1 className="text-2xl text-center text-gray-800 pt-10 font-typewriter m-10">
-          {" "}
-          Glimpses of My Life:
-        </h1>
-        <List
-          items={shuffledPhotos}
-          imgClassName="max-h-96 w-auto rounded-lg shadow"
-        />
-        <br /> <br />
-        <br />
+      <div className="photo-album-content">
+        <h1 className="photo-album-title">Glimpses of My Life:</h1>
+        <List items={shuffledPhotos} imgClassName="photo-album-img" />
       </div>
     </div>
   );
 };
+
 export default PhotoAlbum;

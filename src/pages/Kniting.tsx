@@ -1,3 +1,4 @@
+import "./Kniting.css";
 import List from "../components/List";
 import Navbar from "../components/Navbar";
 
@@ -13,16 +14,11 @@ const Kniting = () => {
   ];
 
   return (
-    <div className=" min-h-screen bg-orange-200">
+    <div className="kniting">
       <Navbar />
-      <div>
-        <h1 className="text-2xl text-center text-gray-800 pt-10 font-quicksand">
-          {" "}
-          Some of my knitting:
-        </h1>
+      <div className="kniting-content">
+        <h1 className="kniting-title">Some of my knitting:</h1>
         <List items={knittingData} />
-        <br /> <br />
-        <br />
       </div>
     </div>
   );
