@@ -6,7 +6,7 @@ import Kniting from "./pages/Kniting";
 import Friends from "./pages/Friends";
 import LandingPage from "./pages/LandingPage";
 import PhotoAlbum from "./pages/PhotoAlbum";
-
+import Cv from "./pages/Cv";
 //import VisuelFormidling from "./pages/VisuelFormidling";
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
           {/* <Route path="/" element={<Home />} /> */}
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<About />} />
+          <Route path="/cv" element={<Cv />} />
           <Route path="/kniting" element={<Kniting />} />
           <Route path="/friends" element={<Friends />} />
           <Route path="/photoAlbum" element={<PhotoAlbum />} />
