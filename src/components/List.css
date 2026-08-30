@@ -1,0 +1,31 @@
+.list {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+.list-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.list-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.list-link:hover {
+  color: #db2777;
+}
+
+.list-img {
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.list-img-default {
+  height: 24rem;
+  width: 18rem;
+}

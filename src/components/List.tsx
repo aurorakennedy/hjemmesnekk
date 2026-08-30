@@ -1,3 +1,5 @@
+import "./List.css";
+
 interface List {
   url?: string;
   navn?: string;
@@ -11,16 +13,14 @@ interface ListProps {
 
 function List({ items, imgClassName }: ListProps) {
   return (
-    <div className="font-quicksand text-center">
-      <ul className="flex flex-row flex-wrap justify-center gap-8">
+    <div className="list">
+      <ul className="list-items">
         {items.map((item, index) => (
           <li key={index}>
-            <a className="hover:text-pink-600 " href={item.url}>
+            <a className="list-link" href={item.url}>
               {item.navn}
               <img
-                className={`${
-                  imgClassName ?? "h-96 w-72"
-                } rounded-lg object-cover`}
+                className={`list-img ${imgClassName ?? "list-img-default"}`}
                 src={item.bilde}
                 alt={`Bilde av ${item.navn}`}
               />

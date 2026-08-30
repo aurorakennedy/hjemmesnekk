@@ -1,0 +1,17 @@
+.kniting {
+  min-height: 100vh;
+  background: #fed7aa;
+}
+
+.kniting-content {
+  padding-bottom: 3rem;
+}
+
+.kniting-title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #1f2937;
+  padding-top: 2.5rem;
+}

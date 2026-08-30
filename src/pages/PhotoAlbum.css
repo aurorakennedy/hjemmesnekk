@@ -1,0 +1,26 @@
+.photo-album {
+  min-height: 100vh;
+  background: #fed7aa;
+}
+
+.photo-album-content {
+  padding-bottom: 3rem;
+}
+
+.photo-album-title {
+  font-family: "Special Elite", system-ui;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #1f2937;
+  padding-top: 2.5rem;
+  margin: 2.5rem;
+}
+
+.photo-album-img {
+  max-height: 24rem;
+  width: auto;
+  box-shadow:
+    0 1px 3px 0 rgb(0 0 0 / 0.1),
+    0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
