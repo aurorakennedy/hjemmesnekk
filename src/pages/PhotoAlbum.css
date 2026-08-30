@@ -1,20 +1,26 @@
 .photo-album {
   min-height: 100vh;
-  background: #fed7aa;
+  background: var(--color-articBlue);
 }
 
-.photo-album-content {
-  padding-bottom: 3rem;
+.photo-album-header {
+  max-width: 70rem;
+  padding: 1.5rem 2rem 2rem;
+  margin: 0 auto;
 }
 
 .photo-album-title {
-  font-family: "Special Elite", system-ui;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-align: center;
-  color: #1f2937;
-  padding-top: 2.5rem;
-  margin: 2.5rem;
+  font-size: clamp(2.5rem, 12vw, 7rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--color-crimsonInk);
+  margin: 0 0 1.5rem;
+}
+
+.photo-album-content {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0 2rem 3rem;
 }
 
 .photo-album-img {
@@ -23,4 +29,14 @@
   box-shadow:
     0 1px 3px 0 rgb(0 0 0 / 0.1),
     0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+@media (max-width: 700px) {
+  .photo-album-header {
+    padding: 1.5rem 1.25rem 1rem;
+  }
+
+  .photo-album-content {
+    padding: 0 1.25rem 3rem;
+  }
 }

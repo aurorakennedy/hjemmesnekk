@@ -8,6 +8,8 @@ function shuffleArray<T>(array: T[]): T[] {
 
 const PhotoAlbum = () => {
   const photoAlbumData = [
+    { navn: "", bilde: "/images/photoAlbum/akvadukt.jpeg" },
+    { navn: "", bilde: "/images/photoAlbum/albaracin.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/athen1.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/athen2.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/athen3.jpeg" },
@@ -16,6 +18,7 @@ const PhotoAlbum = () => {
     { navn: "", bilde: "/images/photoAlbum/athen6.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/athen7.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/buldring.jpeg" },
+    { navn: "", bilde: "/images/photoAlbum/cafeMadrid.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/fjell.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/fjell2.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/fontaines.jpeg" },
@@ -25,13 +28,16 @@ const PhotoAlbum = () => {
     { navn: "", bilde: "/images/photoAlbum/kobe.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/kobe2.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/kunst.jpeg" },
+    { navn: "", bilde: "/images/photoAlbum/marokko.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/mat.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/megogmaria.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/moreller.jpeg" },
+    { navn: "", bilde: "/images/photoAlbum/norge.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/paradis.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/park.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/park2.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/plassen.jpeg" },
+    { navn: "", bilde: "/images/photoAlbum/spania.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/terre.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/terre2.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/tromsø.jpeg" },
@@ -39,6 +45,7 @@ const PhotoAlbum = () => {
     { navn: "", bilde: "/images/photoAlbum/tromsø3.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/utsikt.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/van.jpeg" },
+    { navn: "", bilde: "/images/photoAlbum/van2.jpeg" },
     { navn: "", bilde: "/images/photoAlbum/øya.jpeg" },
   ];
 
@@ -47,8 +54,10 @@ const PhotoAlbum = () => {
   return (
     <div className="photo-album">
       <Navbar />
+      <header className="photo-album-header">
+        <h1 className="photo-album-title">BILDEKARUSELL</h1>
+      </header>
       <div className="photo-album-content">
-        <h1 className="photo-album-title">Glimpses of My Life:</h1>
         <List items={shuffledPhotos} imgClassName="photo-album-img" />
       </div>
     </div>
