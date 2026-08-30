@@ -9,20 +9,6 @@
   margin: 0 auto;
 }
 
-.cv-home-link {
-  display: inline-block;
-  color: var(--color-neonPear);
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 0.9rem;
-  text-decoration: none;
-  margin-bottom: 1.5rem;
-}
-
-.cv-home-link:hover {
-  text-decoration: underline;
-}
-
 .cv-title {
   font-size: clamp(2.5rem, 12vw, 7rem);
   font-weight: 700;
@@ -45,17 +31,6 @@
   line-height: 1.6;
   color: var(--color-black);
   margin: 0 0 1.5rem;
-}
-
-.cv-contact {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 0.9rem;
-  color: var(--color-black);
-  margin-bottom: 0.5rem;
 }
 
 .cv-content {
