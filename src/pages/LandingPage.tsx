@@ -6,10 +6,10 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   const menu: { label: string; path?: string }[] = [
-    { label: "Litt om meg", path: "/about" },
-    { label: "Ting jeg har laget", path: "/kniting" },
-    { label: "CV" },
-    { label: "Mine reiser", path: "/photoAlbum" },
+    { label: "Om meg", path: "/about" },
+    { label: "Prosjekter", path: "/kniting" },
+    { label: "CV", path: "/cv" },
+    { label: "Bildekarusell", path: "/photoAlbum" },
   ];
 
   return (
