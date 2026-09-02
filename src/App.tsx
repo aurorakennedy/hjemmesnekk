@@ -5,11 +5,13 @@ import Projects from "./pages/Projects";
 import LandingPage from "./pages/LandingPage";
 import PhotoAlbum from "./pages/PhotoAlbum";
 import Cv from "./pages/Cv";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <main>
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<About />} />
