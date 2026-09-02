@@ -7,9 +7,9 @@ const LandingPage = () => {
 
   const menu: { label: string; path?: string }[] = [
     { label: "Om meg", path: "/about" },
-    { label: "Prosjekter", path: "/kniting" },
+    { label: "Prosjekter", path: "/projects" },
     { label: "CV", path: "/cv" },
-    { label: "Bildekarusell", path: "/photoAlbum" },
+    { label: "Bildevegg", path: "/photoAlbum" },
   ];
 
   return (
