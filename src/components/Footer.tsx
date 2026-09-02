@@ -11,8 +11,11 @@ const Footer = () => {
         aria-hidden="true"
       >
         <path
-          d="M0,30 C150,60 350,0 600,20 C850,40 1050,0 1200,25 L1200,60 L0,60 Z"
-          fill="var(--color-cosmicLatte)"
+          d="M0,30 C150,60 350,0 600,20 C850,40 1050,0 1200,25"
+          fill="none"
+          stroke="var(--color-crimsonInk)"
+          strokeWidth="4"
+          strokeLinecap="round"
         />
       </svg>
 
