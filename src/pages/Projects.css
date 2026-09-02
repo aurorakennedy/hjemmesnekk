@@ -1,0 +1,146 @@
+.projects {
+  min-height: 100vh;
+  background: var(--color-articBlue);
+}
+
+.projects-header {
+  max-width: 70rem;
+  padding: 1.5rem 2rem 1rem;
+  margin: 0 auto;
+}
+
+.projects-title {
+  font-size: clamp(2.5rem, 12vw, 7rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--color-crimsonInk);
+  margin: 0 0 1rem;
+}
+
+.projects-intro {
+  max-width: 40rem;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  color: var(--color-black);
+  margin: 0;
+}
+
+.projects-content {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 4rem;
+}
+
+.projects-grid {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.projects-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: rgb(255 255 255 / 0.55);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.project-card-github {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  color: var(--color-crimsonInk);
+}
+
+.project-card-github:hover {
+  color: var(--color-black);
+}
+
+.project-card-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: var(--color-black);
+  margin: 0 2rem 0.75rem 0;
+}
+
+.project-card-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-crimsonInk);
+  opacity: 0.7;
+  margin: 0 0 0.75rem;
+}
+
+.project-card-description {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--color-black);
+  opacity: 0.85;
+  margin: 0 0 1rem;
+  flex-grow: 1;
+}
+
+.project-card-learned {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--color-black);
+  opacity: 0.85;
+  margin: 0 0 1rem;
+}
+
+.project-card-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.25rem;
+}
+
+.project-tech-tag {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-black);
+  border: 1.5px solid var(--color-black);
+  border-radius: 999px;
+  padding: 0.25em 0.75em;
+}
+
+.project-card-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-crimsonInk);
+  text-decoration: none;
+}
+
+.project-card-link--demo {
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.project-card-link:hover {
+  color: var(--color-black);
+}
+
+@media (max-width: 700px) {
+  .projects-header {
+    padding: 1.5rem 1.25rem 1rem;
+  }
+
+  .projects-content {
+    padding: 1rem 1.25rem 3rem;
+  }
+}

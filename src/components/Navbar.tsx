@@ -4,9 +4,9 @@ import "./Navbar.css";
 const menu = [
   { label: "Hjem", path: "/" },
   { label: "Om meg", path: "/about" },
-  { label: "Prosjekter", path: "/kniting" },
+  { label: "Prosjekter", path: "/projects" },
   { label: "CV", path: "/cv" },
-  { label: "Bildekarusell", path: "/photoAlbum" },
+  { label: "Bildevegg", path: "/photoAlbum" },
 ];
 
 const Navbar = () => {
