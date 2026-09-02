@@ -1,55 +1,10 @@
 import Footer from "../components/Footer";
 import List from "../components/List";
 import Navbar from "../components/Navbar";
+import { photoAlbumData, shuffleArray } from "../data/photoAlbumData";
 import "./PhotoAlbum.css";
 
-function shuffleArray<T>(array: T[]): T[] {
-  return [...array].sort(() => Math.random() - 0.5);
-}
-
 const PhotoAlbum = () => {
-  const photoAlbumData = [
-    { navn: "", bilde: "/images/photoAlbum/akvadukt.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/albaracin.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/athen1.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/athen2.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/athen3.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/athen4.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/athen5.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/athen6.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/athen7.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/buldring.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/cafeMadrid.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/fjell.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/fjell2.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/fontaines.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/frokost.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/hytta.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/irland.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/kobe.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/kobe2.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/kunst.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/marokko.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/mat.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/megogmaria.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/moreller.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/norge.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/paradis.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/park.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/park2.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/plassen.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/spania.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/terre.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/terre2.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/tromsø.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/tromsø2.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/tromsø3.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/utsikt.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/van.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/van2.jpeg" },
-    { navn: "", bilde: "/images/photoAlbum/øya.jpeg" },
-  ];
-
   const shuffledPhotos = shuffleArray(photoAlbumData);
 
   return (
