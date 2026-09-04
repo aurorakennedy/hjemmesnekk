@@ -4,8 +4,8 @@ import Navbar from "../components/Navbar";
 
 type CvEntry = {
   title: string;
-  detail?: string;
   meta: string;
+  detail?: string;
 };
 
 type TechEntry = {
@@ -19,8 +19,8 @@ const intro =
 const utdanning: CvEntry[] = [
   {
     title: "NTNU - Master i Informatikk",
-    detail: "Interaksjonsdesign, spill og læringsteknologi",
     meta: "Trondheim, aug '25 - jun '27",
+    detail: "Interaksjonsdesign, spill og læringsteknologi",
   },
   {
     title: "UPV - Master i Informatikk",
@@ -43,15 +43,15 @@ const utdanning: CvEntry[] = [
 const erfaring: CvEntry[] = [
   {
     title: "Clave Consulting - Utvikler",
+    meta: "Oslo, sommer '26",
     detail:
       "Utplassert hos Komplett hvor vi utviklet en løsning for videostrømming basert på WHEP Url og SignalR. (Har taushetsplikt rundt innholdet)",
-    meta: "Oslo, sommer '26",
   },
   {
     title: "Clave Consulting - Utvikler",
+    meta: "Oslo, sommer '25",
     detail:
       "Utplassert hos Global Transport Solutions og Marinetrans hvor vi effektiviserte fakturahåndtering med fokus på brukervennlighet og bruk av OCR.",
-    meta: "Oslo, sommer '25",
   },
   {
     title: "Bekkestua Sko - Butikkmedarbeider",
@@ -62,28 +62,28 @@ const erfaring: CvEntry[] = [
 const prosjekter: CvEntry[] = [
   {
     title: "kennedy.no",
-    detail: "Egen nettside",
     meta: "Trondheim, sommer '23",
+    detail: "Egen nettside",
   },
   {
     title: "Studentersamfundet i Trondheim",
-    detail: "Barista og Kaféansvarlig",
     meta: "Trondheim, aug '21 - '24",
+    detail: "Barista og Kaféansvarlig",
   },
   {
     title: "Bachelorprosjektet",
-    detail: "For Zedge hvor vi laget OpenEmojiPlatform",
     meta: "Trondheim, jan '24 - jun '24",
+    detail: "For Zedge hvor vi laget OpenEmojiPlatform",
   },
   {
     title: "Online Linjeforening",
-    detail: "Bedriftkomiteen",
     meta: "Trondheim, jan '22 - aug '23",
+    detail: "Bedriftkomiteen",
   },
   {
     title: "Øyafestivalen",
-    detail: "Opprigg og nedrigg",
     meta: "Oslo, aug '22 & aug '25",
+    detail: "Opprigg og nedrigg",
   },
 ];
 
@@ -116,8 +116,8 @@ const CvSection = ({
     {entries.map((entry) => (
       <div className="cv-entry" key={entry.title}>
         <h3 className="cv-entry-title">{entry.title}</h3>
-        {entry.detail && <p className="cv-entry-detail">{entry.detail}</p>}
         <span className="cv-entry-meta">{entry.meta}</span>
+        {entry.detail && <p className="cv-entry-detail">{entry.detail}</p>}
       </div>
     ))}
   </section>
@@ -128,9 +128,18 @@ const Cv = () => {
     <div className="cv">
       <Navbar />
       <header className="cv-header">
-        <h1 className="cv-title">CV</h1>
-        <p className="cv-name">Aurora Kennedy, 15.06.2000</p>
-        <p className="cv-intro">{intro}</p>
+        <div className="cv-header-text">
+          <h1 className="cv-title">CV</h1>
+          <p className="cv-name">Aurora Kennedy, 15.06.2000</p>
+          <p className="cv-intro">{intro}</p>
+        </div>
+        <div className="cv-img-frame">
+          <img
+            className="cv-img"
+            src="/images/cv/cv.jpeg"
+            alt="CV bilde av Aurora"
+          />
+        </div>
       </header>
 
       <section className="cv-content">
