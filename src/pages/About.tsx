@@ -167,6 +167,16 @@ const About = () => {
         />
       </section>
 
+      <button
+        className="about-photo-link"
+        onClick={() => navigate("/photoAlbum")}
+      >
+        <span className="about-photo-text">
+          Se flere glimt av livet mitt i min
+        </span>
+        <span className="about-photo-badge">Bildevegg</span>
+      </button>
+
       <Footer />
     </div>
   );

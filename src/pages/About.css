@@ -111,6 +111,32 @@
   font-weight: 600;
   padding: 0.3rem 0.6rem;
 }
+.about-photo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  margin: 3rem auto;
+  background: none;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.about-photo-text {
+  background: var(--color-lightPurple);
+  color: var(--color-crimsonInk);
+  padding: 0.25rem 0.5rem;
+}
+
+.about-photo-badge {
+  border: 2px solid var(--color-crimsonInk);
+  color: var(--color-crimsonInk);
+  font-weight: 700;
+  padding: 0.1rem 0.5rem;
+}
 
 /* Photo groups*/
 .photo-group {
