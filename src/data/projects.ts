@@ -33,7 +33,7 @@ export const prosjekter: ProjectEntry[] = [
     intro:
       "OpenEmojiPlatform er en Android-app for å utforske emojier, slå opp betydning, historikk og design, og enkelt kopiere dem. Appen var basert på nettsiden Emojipedia fra Zedge AS og skulle fungere som en forløper til den offisielle Emojipedia-appen, med funksjoner som søk, favoritter, en emoji-quiz og nyhetsfeed.",
     learned:
-      "Å få prøve meg som scrum master ble et av høydepunktene i prosjektet – jeg trivdes godt i rollen, og fikk endelig teste smidig utvikling i praksis og ikke bare fra pensum. I tillegg var det mitt første møte med å bygge en Android-app, og første gang jeg jobbet med et reelt kundeprosjekt. Her lærte jeg hvor viktig det er med god kommunikasjon med kunden underveis, slik at vi var på samme side og landet på en løsning som både dekket ønskene deres og var realistisk å få til på tiden og erfaringen vi hadde.",
+      "Å få prøve meg som scrum master ble et av høydepunktene i prosjektet, jeg trivdes godt i rollen, og fikk endelig teste smidig utvikling i praksis og ikke bare fra pensum. I tillegg var det mitt første møte med å bygge en Android-app, og første gang jeg jobbet med et reelt kundeprosjekt. Her lærte jeg hvor viktig det er med god kommunikasjon med kunden underveis, slik at vi var på samme side og landet på en løsning som både dekket ønskene deres og var realistisk å få til på tiden og erfaringen vi hadde.",
     tech: ["Kotlin", "Jetpack Compose"],
     github: "https://github.com/ITP2-G15/OpenEmojiPlatform/blob/main/README.md",
   },

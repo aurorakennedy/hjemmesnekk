@@ -1,18 +1,21 @@
 import "./About.css";
+import { useNavigate } from "react-router-dom";
 import PhotoGroup from "../components/PhotoGroup";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 const About = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="about">
       <Navbar />
       <header className="about-header">
         <h1 className="about-title">LITT OM MEG</h1>
         <div className="about-intro">
-          <p>Hei på deg!</p>
-          <p>Håper du koser deg på nettsiden min;)</p>
-          <p>Her kan du lære litt om meg!</p>
+          <p>Hei på deg</p>
+          <br />
+          <p>Her deler jeg litt om meg selv:D</p>
         </div>
         <img
           className="about-portrait"
@@ -22,30 +25,34 @@ const About = () => {
       </header>
 
       <section className="about-bio">
-        <p>Jeg heter Aurora og er 26 år og kommer fra Bærum.</p>
-        <p>
-          Jeg har en bachelor i informatikk fra NTNU og tar nå en master også
-          hos NTNU, med spesialisering i interaksjonsdesign, spill- og
-          læringsteknologi. Jeg har akkurat kommet hjem fra
-          utvekslingssemesteret mitt i Valencia og skal begynne på siste året
-          mitt på masteren.
-        </p>
-        <p>
-          Masteren min gjør det mulig for meg å kombinere problemløsning, design
-          og programmering — et krysningspunkt jeg trives veldig godt i. Les mer
-          om erfaringen min under CV-siden.
-        </p>
-        <p>
-          Utenom studie og jobb er jeg en jente som liker å finne på mye og har
-          mange hobbyer.
-        </p>
-        <p>Her kan du få ett inblikk i hva jeg liker å bruke tiden min på :)</p>
+        <div className="about-bio-text">
+          <p>
+            Jeg har en bachelor i informatikk fra NTNU og har gått videre med en
+            master, hvor jeg spesialiserer meg innenfor interaksjonsdesign,
+            spill- og læringsteknologi. Nå er jeg på sisteåret, og har begynt på
+            prosjektoppgaven min som blant annet handler om flyktningers møte
+            med det digitale Norge. Masteren min gjør det mulig for meg å
+            kombinere problemløsning, design og programmering, som er et
+            krysningspunkt jeg trives veldig godt i.
+          </p>
+          <br />
+          <p>
+            Utenfor skole og jobb er jeg en aktiv jente som digger å klatre,
+            strikke og være sosial! Jeg har akkurat returnert fra utveksling i
+            Valencia, hvor jeg fikk kombinert et faglig semester med utforskning
+            av Spanias kultur og natur.
+          </p>
+          <button className="about-cv-link" onClick={() => navigate("/cv")}>
+            Vil du se mer om min erfaring? Sjekk ut min{" "}
+            <span className="about-cv-badge">CV</span>
+          </button>
+        </div>
       </section>
 
       <section className="about-gallery">
         <PhotoGroup
           captionPosition="right"
-          captions={["Jeg syns det er veldig gøy å buldre og klatre"]}
+          captions={["Jeg digger å klatre og buldre"]}
           photos={[
             {
               src: "/images/about/Albaracin.png",
@@ -77,10 +84,10 @@ const About = () => {
         />
 
         <PhotoGroup
-          captionPosition="overlay"
+          captionPosition="left"
           captions={[
             "Dette er hunden min Kobe.",
-            "Jeg er mer glad i å kose enn han.",
+            "Jeg er mer glad i å kose enn han...",
           ]}
           photos={[
             {
@@ -93,7 +100,7 @@ const About = () => {
 
         <PhotoGroup
           captionPosition="right"
-          captions={["Jeg er halvt irsk! Og elsker Irland<3"]}
+          captions={["Jeg er halvt irsk, og elsker Irland<3"]}
           photos={[
             {
               src: "/images/about/ExIrland.png",
@@ -109,8 +116,8 @@ const About = () => {
         />
 
         <PhotoGroup
-          captionPosition="below-right"
-          captions={["Jeg elsker å være i naturen"]}
+          captionPosition="above"
+          captions={["Naturen gjør meg glad"]}
           photos={[
             {
               src: "/images/about/Sabo.png",
@@ -132,7 +139,7 @@ const About = () => {
 
         <PhotoGroup
           captionPosition="left"
-          captions={["Reise og utforske verden", "Ikke like glad i å pakke"]}
+          captions={["Reise og utforske verden >", "> pakke"]}
           photos={[
             {
               src: "/images/about/Vietnam.png",
@@ -159,6 +166,16 @@ const About = () => {
           ]}
         />
       </section>
+
+      <button
+        className="about-photo-link"
+        onClick={() => navigate("/photoAlbum")}
+      >
+        <span className="about-photo-text">
+          Se flere glimt av livet mitt i min
+        </span>
+        <span className="about-photo-badge">Bildevegg</span>
+      </button>
 
       <Footer />
     </div>

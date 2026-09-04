@@ -27,6 +27,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 600;
   color: var(--color-crimsonInk);
+  margin: 0 0 1.5rem;
 }
 
 .about-intro p {
@@ -38,8 +39,8 @@
 
 .about-portrait {
   position: absolute;
-  right: 10rem;
-  top: 11rem;
+  right: 2rem;
+  top: 8rem;
   width: 22rem;
   z-index: 1;
   max-width: 40%;
@@ -54,12 +55,41 @@
   padding: 2.5rem 2rem; /* top/bottom, left/right */
 }
 
-.about-bio p {
+.about-bio-text {
   max-width: 70rem;
-  margin: 0 auto 1rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.about-bio p {
+  max-width: 40rem;
   font-family: "Inter", sans-serif;
   line-height: 1.6;
   color: var(--color-black);
+}
+
+.about-cv-link {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 70rem;
+  margin: 1rem 0;
+  justify-content: flex-end;
+  background: none;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: var(--color-black);
+  cursor: pointer;
+  padding: 0;
+}
+
+.about-cv-badge {
+  border: 2px solid var(--color-crimsonInk);
+  color: var(--color-crimsonInk);
+  font-weight: 700;
+  padding: 0.1rem 0.5rem;
 }
 
 /* Gallery */
@@ -80,6 +110,32 @@
   font-family: "Inter", sans-serif;
   font-weight: 600;
   padding: 0.3rem 0.6rem;
+}
+.about-photo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  margin: 3rem auto;
+  background: none;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.about-photo-text {
+  background: var(--color-lightPurple);
+  color: var(--color-crimsonInk);
+  padding: 0.25rem 0.5rem;
+}
+
+.about-photo-badge {
+  border: 2px solid var(--color-crimsonInk);
+  color: var(--color-crimsonInk);
+  font-weight: 700;
+  padding: 0.1rem 0.5rem;
 }
 
 /* Photo groups*/
@@ -175,9 +231,9 @@
   .about-portrait {
     position: static;
     display: block;
-    width: 80%;
+    width: 30rem;
     max-width: 80%;
-    height: 17rem; /* was 14rem — closer to the photo's actual ~1.29 aspect ratio at this width, so it crops less aggressively */
+    height: 19rem; /* was 14rem — closer to the photo's actual ~1.29 aspect ratio at this width, so it crops less aggressively */
     margin-top: 1.5rem;
     object-position: center;
   }
@@ -187,7 +243,11 @@
   }
 
   .about-bio {
-    padding: 2rem 1.25rem;
+    padding: 2rem 0rem;
+  }
+
+  .about-bio p {
+    padding-left: 0;
   }
 
   .about-gallery {
